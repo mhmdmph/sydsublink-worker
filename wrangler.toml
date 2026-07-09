@@ -1,0 +1,12 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "sydsublink-worker"
+main = "src/worker.jsx"
+compatibility_date = "2024-07-24"
+compatibility_flags = ["nodejs_compat"]
+
+kv_namespaces = [
+  { binding = "SUBLINK_KV", id = "7154d06ec7c0426885e94fe9badf5a31" }
+]
+
+[assets]
+directory = "./public"
